@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
-//! - create the class , for the creation of the tree write function , inside the function take the value then , create the node after that create its left and right using recursion , NOTE - use value instead of root->data while showing the left and right of that particular node 
+//! - create the class , for the creation of the tree write function , inside the function take the value then , create the node after that create its left and right using recursion , NOTE - use value instead of root->data while showing the left and right of that particular node   
+// this is checking for addition things 
 class Node
 {
 public:
