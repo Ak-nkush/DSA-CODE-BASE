@@ -3,19 +3,21 @@
 #include<string>
 using namespace std ; 
 //! reverse the string using recrusion 
+//!- i can be also be done by creating another string and push character while backtracking 
+//
 //todo - appraoch 1 - using head recursion 
 //todo - appraoch 2 - swapping 
 
-// void reverse(string& s , int index ){
-//     // base condition 
-//     if(index == s.length()){
-//         return ; 
-//     }
-//     // case 1 : 
-     
-//     reverse(s,index + 1 ) ; 
-//     cout << s[index] ;
-// } 
+// backtracking approach 
+void solve(string &s , int i , string & ans ){
+    // base case 
+    if(i == s.size()){
+        return ; 
+    }
+    char ch = s[i] ; 
+    solve(s,i+1,ans) ; 
+    ans.push_back(ch) ; 
+} 
 //! swapping appraoch 
 void reverseTwo(string &s , int start , int end){
     // base condition 

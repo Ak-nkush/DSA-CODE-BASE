@@ -55,9 +55,11 @@ void levelOrderTraversal(Node *root)
             q.pop();
 
             if (front == NULL)
-            {
+            {   
+                // it means level is over print a new line 
                 cout << endl;
                 if (!q.empty())
+                    // childs got entered now push NULL ; to indicate level is over 
                     q.push(NULL);
             }
             else

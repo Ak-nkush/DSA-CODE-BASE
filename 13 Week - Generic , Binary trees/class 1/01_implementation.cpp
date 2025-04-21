@@ -43,7 +43,8 @@ Node *createTree()
         root->right = createTree();
         
 
-        return root;
+        return root; //todo - the root will be obiviously get returned inside else because we creating that root 
+                     // todo - inside else statement 
     }
 }
 
