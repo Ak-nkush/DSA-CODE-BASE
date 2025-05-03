@@ -79,7 +79,7 @@ int main(){
   root = creatingTree() ;
   preOrder(root) ;  
   cout << "level order : " << endl ;
-  levelOrder(root) ; 
+  //  fsdfsdf
 }
 
 // 10 50 40 22 -1 -1 30 20 -1 -1 -1 
