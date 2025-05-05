@@ -1,0 +1,1 @@
+[week 1 debug](https://www.notion.so/Supreme-Batch-Debug-Exercise-C-Week-1-1e98a041fd9c807c85a1f9b4f90335d1?pvs=12)
