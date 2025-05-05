@@ -1,0 +1,1 @@
+[week 2 debug questions ](https://www.notion.so/Supreme-Batch-Debug-Exercise-C-Week-2-1e98a041fd9c8014b63de4a6b501ae8f?pvs=4)
