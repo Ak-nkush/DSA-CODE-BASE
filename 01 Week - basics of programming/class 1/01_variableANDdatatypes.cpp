@@ -1,5 +1,9 @@
-#include<iostream>
-using namespace std;
+#include<iostream> // this is the header file 
+using namespace std; 
+//!  using namespace std; is a namespace directive, not part of the STL itself.
+//! It provides direct access to names (functions, classes, objects) in the std namespace, which includes the STL (e.g., vector, sort) and other parts of the C++ Standard Library (e.g., cout, string).
+//! Without it, you’d need to explicitly write std:: before each name (e.g., std::cout, std::vector).
+
 int main(){
     // declaration
     // int age;
