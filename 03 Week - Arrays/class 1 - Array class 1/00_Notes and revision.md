@@ -3,7 +3,7 @@
 * fill method 
 * reverse method 
 
-## An introduction to Time and Space complexity
+## An introduction to Time and Space complexity and Pass by value & reference
 
 #### What is Time Complexity?
 Amount of time taken by an algorithm to run as a **function of length of input**. 
@@ -53,3 +53,12 @@ For example, SC: O(N<sup>2</sup>)
 - increasing order of complexity
   
   O(1), O(logn), O(&radic;n), O(n), O(nlogn), O(n<sup>2</sup>), O(n<sup>3</sup>), O(2<sup>n</sup>), O(N!), O(N<sup>n</sup>)
+
+
+| Function Parameter  | What It Means             | Copy Created? | Can Modify Original? |
+| ------------------- | ------------------------- | ------------- | -------------------- |
+| `int* arr`          | Pointer to first element  | ❌ No          | ✅ Yes                |
+| `int arr[]`         | Treated as `int* arr`     | ❌ No          | ✅ Yes                |
+| `vector<int> v`     | Passed by value           | ✅ Yes         | ❌ No                 |
+| `vector<int>& v`    | Passed by reference       | ❌ No          | ✅ Yes                |
+| `vector<int>* v`    | Pointer to vector         | ❌ No          | ✅ Yes                |
