@@ -1,39 +1,24 @@
 #include<iostream>
 #include<vector>
+#include<math.h>
 using namespace std ; 
 
-vector<pair<int,int>> findPairEqualtoTarget(int arr[] , int&n , int&target ){
-    vector<pair<int,int>> ans ; 
-    for(int i = 0 ; i<n ; i++){
-        for(int j = i+1 ; j<n ; j++){
-            if(arr[i]+ arr[j] == target) {
-                pair<int,int> p = make_pair(arr[i],arr[j]) ; 
-                ans.push_back(p) ; 
-            }
-        }
-    }
-    return ans ; 
-}
 int main(){
-    int arr[3][3] = {{1,2,3},
-                     {4,5,6},
-                     {7,8,9}} ;
-    
-    int n = 3 ; 
-    
-    for(int i = 0 ; i < 3 ; i++){
-        for(int j = 0 ; j <3 ; j++){
-            if(j == n-i-1){
-                cout << arr[i][j] << " " ; 
-            }
-        }
-    }cout << endl ; 
-
-vector<vector<int>>v(3,vector<int>(3,0)) ; 
-    for(int i = 0 ; i < 3 ; i++){
-        for(int j = 0 ; j <3 ; j++){
-            cout << v[i][j] << " " ; 
-        }cout << endl ; 
+      int n ; 
+      cout << "Enter the number : " ; 
+      cin >> n ;
+      
+      int number = 0 ;
+      int i = 0 ;  
+      while(n!=0) {
+        int bits = n % 10 ; 
+        n = n / 10 ;
+        // converting binary into decimal 
+        number = bits*pow(2,i) + number ; 
+        i++ ; 
     }
+    cout << number ; 
+    
 
+        
 }
